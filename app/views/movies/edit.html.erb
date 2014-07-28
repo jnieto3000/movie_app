@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Editing Movie #<%= @movie.id %></h1>
+
+      <form action="/movies/<%= @movie.id %>/update">
+        <div>
+          <label for="name">name</label> <br />
+          <input id="name" name="name" value="<%= @movie.name  %>" type="text" />
+        </div>
+        <div>
+          <label for="url">url</label> <br />
+          <input id="url" name="url" value="<%= @movie.url  %>" type="text" /><br />
+        </div>
+        <div>
+          <input type="submit"><br />
+        </div>
+      </form>
+      <br />
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <a href="#" class="thumbnail">
+          <img src="<%= @movie.url %>" alt="<%= @movie.name %>">
+        </a>
+      </div>        
+
+    </div>
+  </div>
+</div>

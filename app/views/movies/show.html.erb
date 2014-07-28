@@ -1,0 +1,18 @@
+
+<div class="container">
+  <h1>Movie #<%= @movie.id %></h1>
+  <div>
+    <strong>Name</strong>:<br />
+    <p><%= @movie.name %></p>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-6">
+    <a href="#" class="thumbnail">
+      <img src="<%= @movie.url %>" alt="<%= @movie.name %>">
+    </a>
+    <a href="/movies/<%= @movie.id %>/edit">Edit</a> |
+    <a href="/movies/<%= @movie.id %>/destroy">Destroy</a>
+  </div>
+</div>
+  
+  
+

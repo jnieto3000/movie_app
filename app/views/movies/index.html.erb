@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Movies</h1>
+      <p><a href="/new_movie">Add a New Movie</a></p> <p />
+            <hr>       
+
+      <div class="container">
+        <div class="row">  
+          <% @movies.each do |movie| %>
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" class="thumbnail"><img src="<%= movie.url %>" alt="<%= movie.name %>"></a>
+            <a href="/movies/<%= movie.id %>">Show</a>
+            <a href="/movies/<%= movie.id %>/edit">Edit</a>
+            <a href="/movies/<%= movie.id %>/destroy">Destroy</a><p />
+            <hr>
+          </div>
+          <% end %>
+        </div>
+      </div>     
+    </div>
+  </div>
+</div>  
+
+
+
+<!--  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Movies</h1>
+      </div>
+    </div>
+
+   <tr>
+<td> -->     
+  
+<!--       <div class="col-md-3 col-sm-4 col-xs-6">
+        <a href="#" class="thumbnail">
+          <img src="http://www.tammileetips.com/wp-content/uploads/2013/09/Disney-Frozen-Movie-Poster.png" alt="Frozen">
+        </a> -->
+<!--       </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <a href="#" class="thumbnail">
+          <img src="http://podcasts.wordofthenerdonline.com/wp-content/uploads/2014/07/snowpiercer-poster.jpg" alt="Snowpiercer">
+        </a>
+      </div> -->
+<!--       <div class="col-md-3 col-sm-4 col-xs-6">
+        <a href="#" class="thumbnail">
+          <img src="http://blog.bluzog.com/wp-content/uploads/sites/5/2013/07/Dog-Day-Afternoon.jpg" alt="Dog Day Afternoon">
+        </a>
+      </div>
+    </div>
+  </div>
+ -->
